@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tom</title>
+  <title>Document</title>
   <style>
+    body {
+      background-color: rgb(75,75,75);
+      margin: 0px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
-  <iframe src="https://raw.githubusercontent.com/ilikekeyboards4924alt/ilikekeyboards4924alt.github.io-src/master/index.html"></iframe>
+  <div id="wrapper" class="flex-container">
+    <canvas id="canvas" width="1" height="1"></canvas> <!-- the width and height of the canvas will be set in the init.js file-->
+  </div>
+  <script src="https://raw.githubusercontent.com/ilikekeyboards4924alt/ilikekeyboards4924alt.github.io-src/master/init.js"></script>
+  <script src="https://raw.githubusercontent.com/ilikekeyboards4924alt/ilikekeyboards4924alt.github.io-src/master/images.js"></script>
+  <script src="https://raw.githubusercontent.com/ilikekeyboards4924alt/ilikekeyboards4924alt.github.io-src/master/game.js" defer></script>
 </body>
 </html>
