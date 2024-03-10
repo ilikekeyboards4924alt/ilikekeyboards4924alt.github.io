@@ -205,4 +205,4 @@ window.onload = () => {
 setInterval(() => {
   game();
   self.Game.frameCounter += 1;
-}, 1000/5);
+}, 1000/60);
