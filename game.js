@@ -196,7 +196,7 @@ document.addEventListener('keyup', keyEventHandler, true);
 window.onload = () => {
   if (window.mobileCheck == true) {
     document.addEventListener('touchstart', (event) => {
-      alert(event);
+      canvas.width = 1;
     });
   }
 }
