@@ -194,14 +194,15 @@ document.addEventListener('keydown', keyEventHandler, true);
 document.addEventListener('keyup', keyEventHandler, true);
 
 window.onload = () => {
-  if (window.mobileCheck == true) {
-    document.addEventListener('touchstart', (event) => {
-      canvas.width = 1;
-    });
+  document.addEventListener('touchstart', (event) => {
+    canvas.width = 1;
+  });
+  console.log(window.mobileCheck());
+  if (window.mobileCheck() == true) {
   }
 }
 
 setInterval(() => {
   game();
   self.Game.frameCounter += 1;
-}, 1000/60);
+}, 1000/5);
